@@ -1,0 +1,84 @@
+@charset "utf-8";
+header{
+    background-color: pink;
+}
+#profile{
+    background-color: powderblue;
+}
+#sketch{
+    background-color: pink;
+}
+#maya{
+    background-color: powderblue;
+}
+#Web{
+    background-color: pink;
+}
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 20s infinite linear 1s both;
+  }
+
+  .wrap {
+    height: 340px;
+    overflow: hidden;
+
+  }
+
+.content {
+    width: 300px;
+    /* height: 300px; */
+  }
+  .content:nth-child(1) {
+        background-color: pink;
+        
+        
+  }
+  .content:nth-child(2) {
+        background-color: plum;
+        display: flex;
+        width: 300px;
+        height: 800px;
+  }
+  .content:nth-child(3) {
+        background-color: powderblue;
+        display: flex;
+        width: 300px;
+        height: 800px;
+  }
+  .content:nth-child(4) {
+        background-color: purple;
+        display: flex;
+        width: 800px;
+        height: 300px;
+  }
+  .content:nth-child(5) {
+        background-color: pink;
+        display: flex;
+        width: 800px;
+        height: 300px;
+  }
+
+  .slideshow img{
+      height: 300px;
+
+  }
+ 
+  
+  
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      
+    }
+    
+  }
+
+  .slide-paused:hover .slideshow {
+    animation-play-state: paused;
+  }
+  
