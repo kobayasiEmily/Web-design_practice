@@ -1,23 +1,13 @@
 @charset "utf-8";
-header{
+body{
     background-color: pink;
+    text-align: center;
 }
-#profile{
-    background-color: powderblue;
-}
-#sketch{
-    background-color: pink;
-}
-#maya{
-    background-color: powderblue;
-}
-#Web{
-    background-color: pink;
-}
+
 
 .slideshow {
     display: flex;
-    animation: loop-slide 20s infinite linear 1s both;
+    animation: loop-slide 30s infinite linear 1s both;
   }
 
   .wrap {
@@ -28,33 +18,37 @@ header{
 
 .content {
     width: 300px;
-    /* height: 300px; */
+    
   }
+    
+  
   .content:nth-child(1) {
-        background-color: pink;
         
-        
-  }
+    display: flex;
+    width: 300px;
+    height: 800px;
+}
+
   .content:nth-child(2) {
-        background-color: plum;
+        
         display: flex;
         width: 300px;
         height: 800px;
   }
   .content:nth-child(3) {
-        background-color: powderblue;
+        
         display: flex;
         width: 300px;
         height: 800px;
   }
   .content:nth-child(4) {
-        background-color: purple;
+        
         display: flex;
         width: 800px;
         height: 300px;
   }
   .content:nth-child(5) {
-        background-color: pink;
+        
         display: flex;
         width: 800px;
         height: 300px;
@@ -81,4 +75,141 @@ header{
   .slide-paused:hover .slideshow {
     animation-play-state: paused;
   }
+  
+
+
+/*skechのimg*/
+  .slideshow02 {
+    display: flex;
+    animation: loop-slide 30s infinite linear 1s both;
+    animation-direction: reverse;
+  }
+
+  .wrap {
+    height: 340px;
+    overflow: hidden;
+
+  }
+
+.content {
+    width: 300px;
+    
+  }
+    
+  
+  .content:nth-child(2) {
+        
+        display: flex;
+        width: 300px;
+        height: 800px;
+  }
+  .content:nth-child(3) {
+        
+        display: flex;
+        width: 300px;
+        height: 800px;
+  }
+  .content:nth-child(4) {
+        
+        display: flex;
+        width: 300px;
+        height: 800px;
+  }
+  
+
+  .slideshow02 img{
+      height: 300px;
+
+  }
+ 
+  
+  
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      
+    }
+    
+  }
+
+  .slide-paused:hover .slideshow02 {
+    animation-play-state: paused;
+  }
+
+
+  /*MAYAのimg*/
+
+  .slideshow03 {
+    display: flex;
+    animation: loop-slide 30s infinite linear 1s both;
+  }
+
+  .wrap {
+    height: 340px;
+    overflow: hidden;
+
+  }
+
+.content {
+    width: 300px;
+    
+  }
+    
+  .content:nth-child(1) {
+        
+    display: flex;
+    width: 800px;
+    height: 300px;
+}
+  
+  .content:nth-child(2) {
+        
+        display: flex;
+        width: 800px;
+    height: 300px;
+  }
+  .content:nth-child(3) {
+        
+        display: flex;
+        width: 800px;
+    height: 300px;
+  }
+  .content:nth-child(4) {
+        
+        display: flex;
+        width: 800px;
+    height: 300px;
+  }
+  .content:nth-child(5) {
+        
+        display: flex;
+        width: 800px;
+    height: 300px;
+  }
+
+  .slideshow03 img{
+      height: 300px;
+
+  }
+ 
+  
+  
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      
+    }
+    
+  }
+
+  .slide-paused:hover .slideshow03 {
+    animation-play-state: paused;
+  }
+  
   
