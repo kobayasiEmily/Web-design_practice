@@ -6,12 +6,15 @@ h1{
 body{
     background-color: pink;
     text-align: center;
-    
 }
 header{
   background: powderblue;
   border: dotted #fff 20px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+article{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
